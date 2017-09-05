@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE
+  html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>pr0n FAQ</title>
+    <link rel="stylesheet" href="/pr0n.css" type="text/css" />
+  </head>
+  <body>
+    <h1>pr0n FAQ</h1>
+    <p>Last updated November 20th, 2015</p>
+
+    <h2>So, what is this pr0n thing anyway?</h2>
+    
+    <p>pr0n is my very own gallery system. It is used on a few different
+      host names, most notably at <a href="http://pr0n.sesse.net/">pr0n.sesse.net</a>
+      to show images I and others have taken at events I care about (some
+      more than others, of course).</p>
+
+    <h2>Why the name? Is this some kind of fetish site?</h2>
+
+    <p>The name "pr0n" (scriptkiddie-speak for "porn", of course) was just seen
+      as a very good fit for an image gallery. :-) There is no (and will not
+      be any) adult content on this site.</p>
+
+    <h2>Can I upload my own images here?</h2>
+
+    <p>Yes, you can, as long as they're related to one of the events already
+      here. Contact me (see the bottom of the page) for more information.</p>
+
+    <h2>Can I download all the pictures for viewing?</h2>
+   
+    <p>Sorry, no. First of all, please don't use any "web mirroring" program to
+      download all the images — of course, I can't stop you, but you're
+      putting a lot of unneccessary load on the system. There are two main
+      reasons for not downloading all the pictures: First, there is a
+      question of copyright; not all images here are taken by me, and I've
+      been given permission to display them here, not to pass them on. Second,
+      keep in mind that some of the events contain several gigabytes of images —
+      do you really need all that? I'd advise you to crank up the thumbnail
+      size to the maximum possible size instead; it's quite comfortable to
+      browse images on without having to click back and forth all the time.
+      (Either that, or use the fullscreen feature — the most obvious
+      keyboard shortcuts are in place, so it should be comfortable enough for
+      most uses.)</p>
+
+    <h2>Can you remove a picture of me?</h2>
+
+    <p>Yes! By Norwegian law you have the right to deny publication of an image
+      where you are identifiable (with a few exceptions). Just send me an e-mail
+      (see below) with the URL of the images you want removed, and I'll remove them.
+      No questions asked.</p>
+
+    <h2>I just changed thumbnail resolution, why is everything so slow?</h2>
+
+    <p>Probably the requested size was never generated before, so the server
+       has to scale all the images. As the scaling method used is geared
+       towards getting good-quality, sharp thumbnails, not speed, this can
+       take a while. It's all getting cached on disk for later re-use, though,
+       so the next time somebody views the same images in that resolution,
+       it will be snappy as usual.</p>
+
+    <h2>Why didn't you just throw up Gallery? (Or use Flickr, Picasaweb, etc.)</h2>
+
+    <p>Because it didn't fit my needs, and the same goes for all other systems
+      I've seen. I wanted something no-nonsense that would work for <em>my</em>
+      purposes — I don't want to click around endlessly just to watch some
+      pictures. Others are of course free to do as they wish, I can't impose
+      my will on anybody :-)</p>
+
+    <h2>What are the primary features of pr0n?</h2>
+
+    <p>Mostly that it's no-nonsense and just works, without being in your way.
+      Also, it has dynamical rescaling (of good quality — proper,
+      sharp thumbnails, no crappy nearest-neighbor scaling) of both thumbnails
+      and images (most client-side scaling sucks quality-wise, unfortunately),
+      an easy-to-use HTML5 upload
+      interface, cache awareness and in general good performance (being a set
+      of persistent, optimized Perl modules; I've seen it throw out over 300
+      hits a second even without the Varnish in front, but I won't guarantee it
+      would withstand a Slashdot attack ;-) ). Also, it has quite OK skinning
+      capabilities, so it's able to adapt into different designs quite
+      easily.</p>
+
+    <h2>What hardware/software does it run on?</h2>
+      
+    <p>pr0n currently runs on two Intel E5-2650v3 (2x10 cores at 2.30GHz) with 64GB RAM and
+      SATA disks, with some SSDs in front for cache. (The server does a lot of other stuff besides running pr0n, of
+      course.) pr0n itself is a custom-made system by myself,
+      a <a href="http://search.cpan.org/~miyagawa/PSGI-1.102/PSGI.pod">PSGI</a>
+      app server running under <a href="http://search.cpan.org/dist/Starlet/">Starlet</a>
+      behind <a href="https://www.varnish-cache.org/">Varnish</a> 4.1,
+      using <a href="http://www.imagemagick.org/">ImageMagick</a> 6.x
+      (as well as various other Perl modules) and
+      <a href="http://git.sesse.net/?p=qscale">qscale</a>, using
+      <a href="http://www.postgresql.org/">PostgreSQL</a> 9.4 as the back-end
+      database for metadata et al. The base operating system is
+      <a href="http://www.debian.org/">Debian</a> jessie.</p>
+
+    <p>The Perl modules aren't really that big — we're talking about only
+      approx. 2600 lines of code. Most of the real work is done by
+      the software on which pr0n builds on.</p>
+
+    <h2>How much data is there in there, anyway?</h2>
+
+    <p>At the time of writing, approximately 720GB of image data (that is, over
+      195000 different images), plus cache, plus metadata in the SQL database.
+      (These numbers are growing rather rapidly, so they could be outdated at
+      any given time.)</p>
+
+    <h2>Can I get the source?</h2>
+
+    <p>Probably, but are you sure you can get it to work? It's
+      non-trivial to set up, as it depends on lots of odd modules and a lot of
+      custom configuring; this is not a pre-made, user friendly package for your
+      favourite Linux distribution. There is a git repository at
+      <a href="http://git.sesse.net/?p=pr0n">http://git.sesse.net/pr0n/</a>, but
+      I'm not going to hold your hand configuring it. :-) (Hint: If you do not
+      know what git is, and cannot find out on your own, pr0n is not for
+      you.)</p>
+
+    <h2>Will you implement feature X?</h2>
+
+    <p>Probably not; I have a lot of things to do besides programming new
+      features. Also, I'm not really sure if I want tons of stupid people
+      writing stupid comments under my images, or icky HTML pages with
+      "previous" and "next" buttons instead of just getting directly to
+      the images :-) If you really have a novel or cool feature, feel
+      free to contact me (see below).</p>
+
+    <h2>How do I get in touch with you?</h2>
+
+    <p>Try <a href="mailto:sgunderson@bigfoot.com">e-mail</a>, or reach me
+      on IRC as Sesse on EFnet, IRCnet, Freenode or OFTC.</p>
+
+    <hr />
+    <p class="footer">pr0n v3.10,
+      &copy; 2004&ndash;2015 <a href="https://www.sesse.net/">Steinar H. Gunderson</a>.</p>
+  </body>
+</html>

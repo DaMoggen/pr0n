@@ -1,0 +1,58 @@
+body {
+	background-color: white;
+	color: black;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.footer {
+	font-size: smaller;
+	margin-top: 0;
+}
+h2.date {
+	font-size: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+h1 {
+	margin-bottom: 0;
+}
+img {
+	border: 1px solid black;
+}
+h2 {
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+p, h2.date {
+	padding-left: 2em;
+}
+p {
+	margin: 0;
+}
+li {
+	margin-left: 1em;
+}
+.fsfromhere {
+	font-size: small;
+	font-weight: normal;
+	display: inline;
+	margin-left: 1em;
+	padding-left: 0;
+}
+.nextprev {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.filter {
+	font-size: small;
+	font-weight: normal;
+}
+.mainmenu {
+	font-size: small;
+	padding-left: 0em;
+}
+* {
+/*	border: 1px solid red; */
+}
