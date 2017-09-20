@@ -2,7 +2,7 @@
 ===============
 [![License: GPL v2](https://img.shields.io/badge/license-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
-Pr0n is a lightweight photo gallery system written by [Sesse](https://github.com/sesse). It is used on a few different host names, most notably at [https://pr0n.sesse.net](pr0n.sesse.net)  to show images of various events.
+Pr0n is a lightweight photo gallery system written by [Sesse](https://github.com/sesse). It is used on a few different host names, most notably at [pr0n.sesse.net](https://pr0n.sesse.net)  to show images of various events.
 The name "pr0n" was just seen as a very good fit for an image gallery.
 
 Features
