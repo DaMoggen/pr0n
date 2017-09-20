@@ -1,10 +1,8 @@
 ![pr0n-logo](https://i.imgur.com/6CpUrzT.png)
 ===============
-[![Build Status](https://travis-ci.org/DaMoggen/pr0n.svg?branch=master)](https://travis-ci.org/DaMoggen/pr0n)
-[![Coverage Status](https://coveralls.io/repos/github/DaMoggen/pr0n/badge.svg?branch=master)](https://coveralls.io/github/DaMoggen/pr0n?branch=master)
 [![License: GPL v2](https://img.shields.io/badge/license-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
-Pr0n is a lightweight photo gallery system written by [Sesse](https://github.com/sesse). It is used on a few different host names, most notably at [pr0n.sesse.net](pr0n.sesse.net)  to show images of various events.
+Pr0n is a lightweight photo gallery system written by [Sesse](https://github.com/sesse). It is used on a few different host names, most notably at [https://pr0n.sesse.net](pr0n.sesse.net)  to show images of various events.
 The name "pr0n" was just seen as a very good fit for an image gallery.
 
 Features
