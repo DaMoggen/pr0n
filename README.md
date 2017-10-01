@@ -33,4 +33,4 @@ Qscale                     | N/A                       | Faster image scaling su
 License
 ---------------
 Pr0n is licensed under the GNU General Public License, version 2.  
-See [LICENSE](LICENSE) for full details.
+See the [LICENSE](LICENSE) for full details.
